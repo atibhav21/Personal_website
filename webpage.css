@@ -28,6 +28,7 @@
 body {
 	margin: 0;
 	font-family: "Vegur", "GeosansLight";
+	width: 100%;
 }
 
 .spacer {
@@ -58,19 +59,26 @@ body {
 	cursor: pointer;
 }
 
-.welcome_page {
-	background-image: url("ucla_2.jpg"); /*https://www.flickr.com/photos/8069341@N04/7451946966*/
+.welcome_page_background {/*https://www.flickr.com/photos/8069341@N04/7451946966*/
+	position: absolute;
+	top: 50px;
+	bottom: 5px;
+	left: 0px;
+	right: 0px;
 	height: 93vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-filter: blur(10px);
-    filter: blur(5px);
-    z-index: -1;
+	width: 100vw;
+	-webkit-filter: blur(5px);
+	z-index: -1;
+}
+
+.background_img {
+	width: 1000px;
 }
 
 .welcome_page_content {
     width: 300px;
     height: 100px;
+    margin-left: 30%;
 }
 
 .my_face_wrapper {
@@ -105,10 +113,13 @@ body {
 	width: 400px;
 	height: 300px;
 	margin-left: 40px;
-
+	border: 2px solid white;
 }
 
 .project:hover {
 	border: 2px solid black;
 	animation-duration: 20s;
+}
+.spacer_2 {
+	height: 600px;
 }
