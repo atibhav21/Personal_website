@@ -1,0 +1,114 @@
+@font-face{
+	font-family: 
+		'GeosansLight';
+	src: 
+		url('fonts/GeosansLight.ttf')
+		format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 
+		"Vegur";
+	src: 
+		url('fonts/Vegur-Light.otf')
+		format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 
+    	"Vegur";
+    src: 
+    	url("fonts/Vegur-Regular.otf") 
+    	format('opentype');
+    font-weight: bold;
+}
+
+body {
+	margin: 0;
+	font-family: "Vegur", "GeosansLight";
+}
+
+.spacer {
+	height: 7vh;
+}
+
+.nav_bar {
+	overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    height: 7vh;
+    z-index: 5;
+}
+
+.nav_bar a{
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+	background-color: #111;
+	cursor: pointer;
+}
+
+.welcome_page {
+	background-image: url("ucla_2.jpg"); /*https://www.flickr.com/photos/8069341@N04/7451946966*/
+	height: 93vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.welcome_page_content {
+    width: 300px;
+    height: 100px;
+}
+
+.my_face_wrapper {
+	padding-top: 30vh;
+}
+
+#my_face {
+	width: 150px;
+	border-radius: 75px;
+	border: 1px solid grey;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.quote {
+	font: italic;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 2em;
+	color: #000000;
+}
+
+.heading {
+	width: 100%;
+	margin: 10px 5px;
+	font-weight: bold;
+}
+
+.project {
+	width: 400px;
+	height: 300px;
+	margin-left: 40px;
+
+}
+
+.project:hover {
+	border: 2px solid black;
+	animation-duration: 20s;
+}
